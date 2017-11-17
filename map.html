@@ -10,41 +10,39 @@
 <body>
 	<div id="example"></div>
 	<script type="text/babel">
-			const dataArr = [
-				{
-					"skilledField":"心内科", 
-					"jobTitle":"主任医师", 
-					"experience":"sofhiohg", 
-					"signedCompany":"fsdg"
-				},
-				{
-					"skilledField":"心内fhhg科", 
-					"jobTitle":"主任医gcfgh师", 
-					"experience":"sofhighohg", 
-					"signedCompany":"fshjdg"
-				},
-				{
-					"skilledField":"心内科", 
-					"jobTitle":"主任医师", 
-					"experience":"sofhiohg", 
-					"signedCompany":"fsdg"
-				}
-			];
-			const listItem = dataArr.map((data, index) => 
-					<div key={index}>		
-						<div>擅长领域：{data.skilledField}</div>
-						<div>职称：{data.jobTitle}</div>
-						<div>经历：{data.experience}</div>
-						<div>签约企业：{data.signedCompany}</div>
-					</div>	
-					
-			);
+		const dataArr = [
+			{
+				"skilledField":"心内科", 
+				"jobTitle":"主任医师", 
+				"experience":"sofhiohg", 
+				"signedCompany":"fsdg"
+			},
+			{
+				"skilledField":"心内fhhg科", 
+				"jobTitle":"主任医gcfgh师", 
+				"experience":"sofhighohg", 
+				"signedCompany":"fshjdg"
+			},
+			{
+				"skilledField":"心内科", 
+				"jobTitle":"主任医师", 
+				"experience":"sofhiohg", 
+				"signedCompany":"fsdg"
+			}
+		];
+		const listItem = dataArr.map((data, index) => 
+				<div key={index}>		
+					<div>擅长领域：{data.skilledField}</div>
+					<div>职称：{data.jobTitle}</div>
+					<div>经历：{data.experience}</div>
+					<div>签约企业：{data.signedCompany}</div>
+				</div>	
+				
+		);
 		ReactDOM.render(
 			<div>{listItem}</div>,
 			document.getElementById('example')			
 		);
-		
-		12345468dfhgghghgjn
 	</script>
 
 </body>
